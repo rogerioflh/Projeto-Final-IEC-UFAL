@@ -2,7 +2,7 @@
 
 ## Descrição:
 
-O projeto consiste na manipulação de objetos utilizando um braço robótico com 4 eixos,onde o braço executaria movimentos simples, apenas para pegar, mover, largar o objeto e repetir o processo.
+O projeto consiste na manipulação de objetos utilizando um braço robótico com 4 eixos, onde o mesmo executaria movimentos simples de pegar, mover, largar o objeto e repetir o processo.
 Como materias, foram utilizados:
 - 1 - Arduino Uno;
 - 4 - Servo morotes MG90S;
@@ -14,9 +14,9 @@ Como materias, foram utilizados:
 
 ## Observações:
 
-1. Mesmo usando um capacitor para filtar a corrente e diminuir a trepidação, os servos motores ainda apresentavam instabilidade na hora de realizar o movimento.
-2. A ideia inicial era que o usuário setasse os posições manualmente para cada um dos servos motores, e após isso, o braço entraria em um loop, onde ele iria para as posições pre definidas.
-3. Como os servos motores recebem apenas um pulso PWM, ao setar as posições diretamente, os servos acabavam avrançando abruptamente, o que fazia eles perderem a posição ou simplesmente derrubarem o objeto ao avançarem para agarra-lo.
+1. Mesmo usando um capacitor para filtar a corrente e diminuir a trepidação, os servos motores ainda apresentavam instabilidade na hora de realizar os movimentos.
+2. A ideia inicial era que o usuário setasse os posições manualmente para cada um dos servos motores, e após isso, o braço entraria em um loop, onde ele iria automaticamente para as posições pre definidas.
+3. Como os servos motores recebem apenas um pulso PWM, ao setar as posições diretamente, os servos acabavam avançando abruptamente, o que fazia com que eles perdessem a posição ou simplesmente derrubassem o objeto ao avançarem para agarra-lo.
 4. Uma das maneiras idealizadas para resolver esse problema foi colocar cada valor dentro de um laço **for**, onde os servos iam avançando grau a grau, suavemente, para evitar os tipos de situações antes mencionadas.
 
 ## Instalação:
